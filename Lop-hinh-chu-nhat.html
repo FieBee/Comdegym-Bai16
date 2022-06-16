@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lop hinh chu nhat</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500px" height="300px"></canvas>
+</body>
+</html>
+<script !src="">
+
+      let Rectangle = function (chieuDai,chieuRong){
+        this.chieuDai = chieuDai
+        this.chieuRong =chieuRong
+        this.dienTich =function (){
+            return chieuDai*chieuRong
+        }
+        this.chuVi = function (){
+            return (chieuDai+chieuRong)*2
+        }
+
+      }
+      let hcn1 = new Rectangle(300,200)
+      let S = hcn1.dienTich()
+      let P = hcn1.chuVi()
+
+      document.write("Dien tich la: " +S+";  Chu vi la: "+P)
+      let canvas = document.getElementById("myCanvas")
+        if (canvas.getContext){
+          let ctx = canvas.getContext("2d")
+          ctx.fillStyle='#fa4b2a';
+          ctx.fillRect(50, 50, hcn1.chieuDai, hcn1.chieuRong)
+          ctx.stroke()
+        }
+</script>
