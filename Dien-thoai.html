@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script !src="">
+
+
+    let a
+    let Mobile = function (battery,memoryArea1,memoryArea2,memoryArea3){
+        this.battery =battery
+        this.memoryArea1 = memoryArea1
+        this.memoryArea2 = memoryArea2
+        this.memoryArea3 = memoryArea3
+
+        this.checkStatusOnOff = function (){
+            if (this.battery>0){
+                return true
+
+            }else {
+                return false
+            }
+        }
+
+        this.turnOn = function (){
+            alert("Dien thoai dang bat")
+        }
+        this.turnOff = function (){
+            alert("Dien thoai dang tat  ")
+        }
+
+        this.sacPin = function (){
+            alert("Xac pin "+this.battery++)
+        }
+        this.soanTin = function (){
+            a =prompt("Nhap tin nhan can soan")
+        }
+        this.nhanTin = function (){
+            alert("Da nhan tin nhan")
+        }
+
+        this.guiTin = function (){
+            prompt("Gui tin nhan")
+        }
+        this.xemTinnhan = function (){
+            alert(a)
+        }
+        this.xemTingui =function (){
+            alert("Tin nhan da gui")
+        }
+        this.suDung =function (){
+            alert("Dung mot chuc nang "+this.battery--)
+        }
+
+    }
+
+    let iphone = new Mobile(10,100,100,100)
+    let nokia = new Mobile(5,50,50,50)
+
+
+    nokia.soanTin(a)
+    iphone.nhanTin()
+    iphone.xemTinnhan(a)
+
+
+    // function main(){
+    //     iphone.turnOff()
+    // }
+    // function main1(){
+    //     iphone.turnOn()
+    // }
+    // function main2(){
+    //     iphone.sacPin()
+    // }
+    // function main3(){
+    //     iphone.soanTin()
+    // }
+    // function main4( ){
+    //     iphone.nhanTin()
+    // }
+    // function main5( ){
+    //     iphone.guiTin()
+    // }
+    // function main6( ){
+    //     iphone.xemTinnhan()
+    // }
+    // function main7( ){
+    //     iphone.xemTingui()
+    // }
+    // function main8(){
+    //     iphone.suDung()
+    // }
+    //
+    //
+    // main()
+    // main1()
+    // main2()
+    // main3()
+    // main8()
+    // main4()
+    // main8()
+    // main5()
+    // main8()
+    // main6()
+    // main8()
+    // main7()
+    //
+    // main8()
+</script>
